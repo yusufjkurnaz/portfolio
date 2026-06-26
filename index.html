@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="Yusuf Kurnaz | Portfolio & Indie Projects">
+    <meta property="og:description" content="Bilgisayar Mühendisliği öğrencisi. 1.248 gerçek oyuncu verisi barındıran World Cup 2026 Simülasyon oyunumu ve projelerimi inceleyin.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jkurnaz.com">
+    <meta property="og:image" content="https://jkurnaz.com/assets/img/og-cover.png">
+
+    <title>jkurnaz.com | Yusuf Kurnaz</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.removeAttribute('data-theme');
+        }
+    </script>
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="#hero" class="nav-link" data-tab="hero">jkurnaz.com</a>
+        </div>
+        <nav class="nav-links">
+            <a href="#hero" class="nav-link active" data-tab="hero" data-i18n="nav_home">Ana Sayfa</a>
+            <a href="#projects" class="nav-link" data-tab="projects" data-i18n="nav_projects">Projeler</a>
+            <a href="#contact" class="nav-link" data-tab="contact" data-i18n="nav_contact">İletişim</a>
+        </nav>
+        <div class="nav-controls">
+            <select id="lang-select">
+                <option value="tr">TR</option>
+                <option value="en">EN</option>
+                <option value="de">DE</option>
+            </select>
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="tab-content active">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="pulse-dot"></span>
+                    <span data-i18n="status_tag">STATÜ: Bilgisayar Mühendisliği Öğrencisi   |   ODAK: Algoritma Mantığı & Web</span>
+                </div>
+                
+                <h1 data-i18n="hero_title">Merhaba, Ben Yusuf Kurnaz</h1>
+                <p data-i18n="hero_description">Bilgisayar Mühendisliği öğrencisiyim. C, Python ve JavaScript dilleriyle çalışıyor; özellikle algoritma mantığı ve web programlama üzerine temelimi sağlamlaştırıyorum.</p>
+                
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary nav-link" data-tab="contact" data-i18n="hero_cta">İletişime Geç</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="tab-content">
+            <h2 data-i18n="projects_title">Projelerim</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 data-i18n="project_wc_title">World Cup 2026 Simulator</h3>
+                    <p data-i18n="project_wc_desc">48 takım ve 1.248 gerçek oyuncu verisini tarayıcı üzerinde işleyen, kalıcı hafızalı kapsamlı bir spor simülasyon web oyunu.</p>
+                    
+                    <ul class="project-features">
+                        <li data-i18n="project_wc_f1">3 Bağımsız Oyun Modu: Anlık sonuç veren Hızlı Simüle, kadro & taktik dizilimli Taktik Modu ve Özel Grup Kurgulayıcı.</li>
+                        <li data-i18n="project_wc_f2">1.248 Gerçek Oyuncu Verisi: 48 ülkenin eksiksiz kadrosu; her oyuncuya özel 8 farklı mevki (KL, SĞB, SLB...) ve Genel Güç (OVR) motoru.</li>
+                        <li data-i18n="project_wc_f3">Dinamik Maç Analitiği: Karşılaşma esnasında arka planda hesaplanan topla oynama yüzdeleri, anlık gol ve asist takibi.</li>
+                        <li data-i18n="project_wc_f4">Turnuva Ekosistemi & Ödüller: Turnuva sonu Gol Kralı, Asist Kralı gibi bireysel ödülleri tayin eden istatistik motoru ve haber akışı.</li>
+                        <li data-i18n="project_wc_f5">Kalıcı State Yönetimi: LocalStorage mimarisi sayesinde tarayıcı kapatılsa dahi silinmeyen kariyer, fikstür ve grup hafızası.</li>
+                        <li data-i18n="project_wc_f6">Kurallara Duyarlı Fikstür: Resmi Dünya Kupası regülasyonlarına tam uyumlu çalışan grup ve çapraz eşleşme algoritmaları.</li>
+                    </ul>
+
+                    <div class="project-numbers-grid">
+                        <div class="num-box">
+                            <strong>48</strong>
+                            <span data-i18n="stat_teams_lbl">Milli Takım</span>
+                        </div>
+                        <div class="num-box">
+                            <strong>1.248</strong>
+                            <span data-i18n="stat_players_lbl">Oyuncu Verisi</span>
+                        </div>
+                        <div class="num-box">
+                            <strong>8</strong>
+                            <span data-i18n="stat_ovr_lbl">Mevki & OVR Motoru</span>
+                        </div>
+                        <div class="num-box">
+                            <strong>%100</strong>
+                            <span data-i18n="stat_client_lbl">Client-Side</span>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                        <span>Algorithms</span>
+                        <span>DOM API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://wc26simulator.jkurnaz.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="project_view_live">Canlı Önizleme</a>
+                        <a href="https://github.com/yusufjkurnaz" target="_blank" rel="noopener noreferrer" class="btn btn-icon">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h2 data-i18n="contact_title">İletişim</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p data-i18n="contact_subtitle">Projelerim hakkında konuşmak, tavsiye vermek veya staj/iş fırsatları için aşağıdaki kanallardan bana ulaşabilirsiniz.</p>
+                    
+                    <div class="social-cards-wrapper">
+                        <a href="https://github.com/yusufjkurnaz" target="_blank" rel="noopener noreferrer" class="social-card">
+                            <span class="social-platform">GitHub</span>
+                            <span class="social-username">@yusufjkurnaz</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yusuf-kurnaz-06570b394/" target="_blank" rel="noopener noreferrer" class="social-card">
+                            <span class="social-platform">LinkedIn</span>
+                            <span class="social-username">Yusuf Kurnaz</span>
+                        </a>
+                        <a href="https://www.instagram.com/yusufjkurnaz" target="_blank" rel="noopener noreferrer" class="social-card">
+                            <span class="social-platform">Instagram</span>
+                            <span class="social-username">@yusufjkurnaz</span>
+                        </a>
+                    </div>
+
+                </div>
+                <form action="https://formspree.io/f/xrewpowp" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form_name">İsim</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email">E-posta</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form_message">Mesaj</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit" data-i18n="form_submit">Gönder</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-tip" data-i18n="footer_tip">İpucu: Gezinmek için [1] [2] [3] tuşlarını, tema değiştirmek için [T] tuşunu kullanabilirsiniz.</p>
+        <p>&copy; 2026 jkurnaz.com. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
